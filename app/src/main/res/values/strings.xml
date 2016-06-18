@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Alunos</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <!-- formulário -->
+    <string name="opinion_title">Formulário</string>
+    <string name="opinion_nome">Nome</string>
+    <string name="opinion_endereco">Endereço</string>
+    <string name="opinion_telefone">Telefone</string>
+    <string name="opinion_site">Site</string>
+    <string name="opinion_salvar">Salvar</string>
+</resources>

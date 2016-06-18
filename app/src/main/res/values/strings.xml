@@ -1,13 +1,14 @@
 <resources>
-    <string name="app_name">Alunos</string>
+    <string name="app_name">Pesquisa de Opinião</string>
 
     <string name="action_settings">Configurações</string>
 
     <!-- formulário -->
-    <string name="opinion_title">Formulário</string>
-    <string name="opinion_nome">Nome</string>
-    <string name="opinion_endereco">Endereço</string>
-    <string name="opinion_telefone">Telefone</string>
-    <string name="opinion_site">Site</string>
-    <string name="opinion_salvar">Salvar</string>
+    <string name="opinion_title">Pesquisa de Opinião</string>
+    <string name="opinion_question">Qual a pesquisa de opinião?</string>
+    <string name="opinion_name">Opinião</string>
+    <string name="opinion_btn_save">Salvar</string>
+    <string name="opinion_radio_opinion">Opinião</string>
+    <string name="opinion_radio_rating">Nota</string>
+    <string name="opinion_type">Qual o tipo?</string>
 </resources>

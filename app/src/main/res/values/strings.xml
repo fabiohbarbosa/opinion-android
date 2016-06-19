@@ -6,10 +6,11 @@
     <!-- formulário -->
     <string name="opinion_title">Pesquisa de Opinião</string>
     <string name="opinion_question">Qual a pesquisa de opinião?</string>
-    <string name="opinion_name">Opinião</string>
+    <string name="opinion_name">Pergunta?</string>
     <string name="opinion_btn_save">Salvar</string>
-    <string name="opinion_radio_option">Opções</string>
-    <string name="opinion_radio_rating">Nota</string>
+    <string name="opinion_radio_yesorno">Responda sim ou não</string>
+    <string name="opinion_radio_option">Selecione uma das respostas</string>
+    <string name="opinion_radio_rating">Classifique com uma nota</string>
     <string name="opinion_type">Qual o tipo?</string>
     <string name="title_activity_login">Login</string>
 

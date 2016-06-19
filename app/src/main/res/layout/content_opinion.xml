@@ -10,8 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:fillViewport="false"
-    android:clickable="false">
+    tools:showIn="@layout/activity_opinion">
 
     <LinearLayout
         android:orientation="vertical"
@@ -29,9 +28,10 @@
 
         <EditText
             android:id="@+id/opinion_name"
-            android:hint="@string/opinion_name"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="25dp" />
 
         <TextView
@@ -44,6 +44,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="25dp">
+
+            <RadioButton
+                android:id="@+id/opinion_radio_yesorno"
+                android:text="@string/opinion_radio_yesorno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <RadioButton
                 android:id="@+id/opinion_radio_option"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="opinions">
+        <item>Pelé foi melhor que Maradona?</item>
+        <item>Qual nota você dá para o jantar?</item>
+        <item>Quem é o pai da aviação?</item>
+        <item>Qual comida você gosta mais?</item>
+        <item>Você acredita em vida após a morte?</item>
+        <item>Qual o melhor time de basquete?</item>
+        <item>Quem veio primeiro? A galinha ou o ovo?</item>
+        <item>Qual a melhor cidade para se viver?</item>
+        <item>Qual o seu professor preferido?</item>
+    </array>
+</resources>

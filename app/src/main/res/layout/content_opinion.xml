@@ -28,16 +28,15 @@
 
         <EditText
             android:id="@+id/opinion_name"
-            android:ellipsize="end"
-            android:maxLines="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp" />
+            android:layout_marginBottom="25dp"
+            android:inputType="text" />
 
         <TextView
             android:text="@string/opinion_type"
             android:textSize="24sp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioGroup
@@ -64,6 +63,22 @@
                 android:layout_height="wrap_content" />
         </RadioGroup>
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/hr"
+            android:layout_marginBottom="25dp"/>
+
+        <include
+            layout="@layout/content_opinion_yesorno"
+            android:id="@+id/content_opinion_yesorno"
+            android:visibility="gone"/>
+
+        <include
+            layout="@layout/content_opinion_option"
+            android:id="@+id/content_opinion_option"
+            android:visibility="gone"/>
+
         <include
             layout="@layout/content_opinion_rating"
             android:id="@+id/content_opinion_rating"
@@ -72,8 +87,8 @@
         <Button
             android:id="@+id/form_btn_salvar"
             android:text="@string/opinion_btn_save"
-            android:textColor="@color/colorWhite"
-            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:background="@color/primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

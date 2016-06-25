@@ -58,46 +58,36 @@ public class OpinionActivity extends AppCompatActivity {
 
     @OnClick(R.id.opinion_radio_yesorno)
     public void radioYesOrNo() {
-        radioYesOrNo.setVisibility(View.VISIBLE);
         radioOption.setVisibility(View.GONE);
-        radioRating.setVisibility(View.GONE);
     }
 
 
     @OnClick(R.id.opinion_radio_option)
     public void radioOption() {
-        radioYesOrNo.setVisibility(View.GONE);
         radioOption.setVisibility(View.VISIBLE);
-        radioRating.setVisibility(View.GONE);
     }
 
     @OnClick(R.id.opinion_radio_rating)
     public void radioRating() {
-        radioYesOrNo.setVisibility(View.GONE);
         radioOption.setVisibility(View.GONE);
-        radioRating.setVisibility(View.VISIBLE);
     }
 
     @OnClick(R.id.form_btn_salvar)
     public void save() {
-        Toast.makeText(this, "Botão clicado "+radioRating.getRating(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Botão clicado", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onSaveInstanceState (Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt(CONTENT_OPINION_YES_OR_NO, radioYesOrNo.getVisibility());
         outState.putInt(CONTENT_OPINION_OPTION, radioOption.getVisibility());
-        outState.putInt(CONTENT_OPINION_RATING, radioRating.getVisibility());
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
-        setVisibility(savedInstanceState, radioYesOrNo, CONTENT_OPINION_YES_OR_NO);
         setVisibility(savedInstanceState, radioOption, CONTENT_OPINION_OPTION);
-        setVisibility(savedInstanceState, radioRating, CONTENT_OPINION_RATING);
     }
 
     private void setVisibility(Bundle savedInstanceState, View view, String viewId) {

@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingTop="@dimen/activity_top_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_bottom_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_top_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".opinion.activity.OpinionActivity"
     tools:showIn="@layout/activity_opinion">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".opinion.activity.OpinionActivity"
-        tools:showIn="@layout/activity_opinion">
+        android:orientation="vertical">
 
         <TextView
-            android:textSize="24sp"
-            android:text="@string/opinion_question"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:text="@string/opinion_question"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/opinion_name"
@@ -34,63 +32,62 @@
             android:inputType="text" />
 
         <TextView
-            android:text="@string/opinion_type"
-            android:textSize="24sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/opinion_type"
+            android:textSize="24sp" />
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="25dp">
 
             <RadioButton
                 android:id="@+id/opinion_radio_yesorno"
-                android:text="@string/opinion_radio_yesorno"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/opinion_radio_yesorno" />
 
             <RadioButton
                 android:id="@+id/opinion_radio_option"
-                android:text="@string/opinion_radio_option"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/opinion_radio_option" />
 
             <RadioButton
                 android:id="@+id/opinion_radio_rating"
-                android:text="@string/opinion_radio_rating"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/opinion_radio_rating" />
         </RadioGroup>
 
         <View
             android:layout_width="fill_parent"
             android:layout_height="2dp"
-            android:background="@color/hr"
-            android:layout_marginBottom="25dp"/>
+            android:layout_marginBottom="25dp"
+            android:background="@color/hr" />
 
         <include
-            layout="@layout/content_opinion_yesorno"
             android:id="@+id/content_opinion_yesorno"
-            android:visibility="gone"/>
+            layout="@layout/content_opinion_yesorno"
+            android:visibility="gone" />
 
         <include
-            layout="@layout/content_opinion_option"
             android:id="@+id/content_opinion_option"
-            android:visibility="gone"/>
+            layout="@layout/content_opinion_option"
+            android:visibility="gone" />
 
         <include
-            layout="@layout/content_opinion_rating"
             android:id="@+id/content_opinion_rating"
-            android:visibility="gone"/>
+            layout="@layout/content_opinion_rating"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/form_btn_salvar"
-            android:text="@string/opinion_btn_save"
-            android:textColor="@color/white"
-            android:background="@color/primary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:text="@string/opinion_btn_save"
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>
